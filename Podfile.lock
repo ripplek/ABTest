@@ -1,0 +1,103 @@
+PODS:
+  - Alamofire (4.7.3)
+  - CGFloatLiteral (0.4.0)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Swift (3.4.2):
+    - CocoaLumberjack/Default
+  - Differentiator (3.0.2)
+  - Kingfisher (4.8.0)
+  - ManualLayout (1.3.0)
+  - MJRefresh (3.1.15.3)
+  - ReactorKit (1.1.0):
+    - RxSwift (>= 4.0.0)
+  - ReusableKit (2.0.1):
+    - ReusableKit/Core (= 2.0.1)
+  - ReusableKit/Core (2.0.1)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxCodable (0.3.0):
+    - RxCodable/Core (= 0.3.0)
+  - RxCodable/Core (0.3.0):
+    - RxSwift (>= 4.0.0-beta.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGesture (1.2.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxKeyboard (0.8.3):
+    - RxCocoa (>= 4.1.0)
+    - RxSwift (>= 4.1.0)
+  - RxOptional (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - RxViewController (0.3.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - SectionReactor (0.4.0):
+    - ReactorKit
+    - RxDataSources
+  - SnapKit (4.0.0)
+  - SwiftyColor (1.0.0)
+  - SwiftyImage (1.2.0)
+  - Then (2.3.0)
+  - UITextView+Placeholder (1.2.1)
+  - URLNavigator (2.0.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - CGFloatLiteral
+  - CocoaLumberjack/Swift (~> 3.4)
+  - Differentiator (~> 3.0)
+  - Kingfisher (~> 4.8)
+  - ManualLayout (~> 1.3)
+  - MJRefresh
+  - ReactorKit
+  - ReusableKit (~> 2.0)
+  - RxCocoa (~> 4.2)
+  - RxCodable (~> 0.3)
+  - RxDataSources (~> 3.0)
+  - RxGesture (~> 1.2)
+  - RxKeyboard (~> 0.8)
+  - RxOptional (~> 3.5)
+  - RxSwift (~> 4.2)
+  - RxViewController (~> 0.3)
+  - SectionReactor (~> 0.4)
+  - SnapKit (~> 4.0)
+  - SwiftyColor
+  - SwiftyImage
+  - Then (~> 2.3)
+  - UITextView+Placeholder
+  - URLNavigator
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CGFloatLiteral: 2ab558b74124b584dd023a35b7e41795a61d8140
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  ManualLayout: 68ac8cfa6b5f656f7a9fadec3730208b95986880
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  ReactorKit: 26470a9eff5094fae909a30af0be7cd0cf8a182d
+  ReusableKit: 11b5bde14553a35bcf3979412dbfd1e690392f14
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxCodable: 12d41ab0ba58f455cfc83965fcc927ac4bad3e7f
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
+  RxKeyboard: e5efbaa109c35be909dd888e53de0f0efdf5169e
+  RxOptional: bd32ff8ca9df4177683d56ffeb618a9d4d5d5cad
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  RxViewController: 203510707e73dd95f147f0c387710e3ec80d2b0f
+  SectionReactor: 9ef5f0344c0709ec7a2dcc313ff4f2162fcf83eb
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyColor: 7fa09db14051bc5d7f539e1c4576665975225992
+  SwiftyImage: ebaa7c7b6163cd4ad102f3bb05a8fb276d35b4f3
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
+  UITextView+Placeholder: 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+  URLNavigator: 2357a32f3b3787b748bf87deb927761f8b0f7f53
+
+PODFILE CHECKSUM: be8f101961e701c025f01086edfb44063f260a8f
+
+COCOAPODS: 1.4.0
