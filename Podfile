@@ -9,6 +9,7 @@ target 'ABTest' do
 
   # Networking
   pod 'Alamofire', '~> 4.7'
+  pod 'Moya/RxSwift'
   #pod 'Moya'
   #pod 'Moya/RxSwift'
   #pod 'MoyaSugar'

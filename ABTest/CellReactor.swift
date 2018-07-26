@@ -17,12 +17,12 @@ final class CellReactor: Reactor {
         var detailText: String?
     }
     
-    let star: Persion
+    let feed: Feed
     let initialState: State
     
-    init(star: Persion) {
-        self.star = star
-        self.initialState = State(text: star.name, detailText: star.picknum)
+    init(feed: Feed) {
+        self.feed = feed
+        self.initialState = State(text: feed.title, detailText: feed.author)
         _ = self.state
     }
 }

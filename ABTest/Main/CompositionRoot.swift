@@ -20,8 +20,9 @@ final class CompositionRoot {
         window.backgroundColor = .white
         window.makeKeyAndVisible()
         
-        let client = Client(accessToken: "")
-        let react = ViewReactor(client: client)
+        let networking = ABTestNetworking()
+        let service = Service(networking: networking)
+        let react = ViewReactor(service: service)
         let vc = ViewController(reactor: react)
         window.rootViewController = MainTabbarController(reactor: MainTabBarViewReactor(), shotListViewController: vc)
         return AppDependency(window: window,

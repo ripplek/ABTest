@@ -35,13 +35,13 @@ class ViewController: SoapViewController, View {
     
     // MARK: - UI
     
-    let refreshControl = UIRefreshControl(frame: .zero)
     let tableView = UITableView(
             frame: .zero,
             style: .grouped
         ).then {
             $0.register(Reusable.cell)
             $0.mj_header = MJRefreshGifHeader()
+            $0.mj_footer = MJRefreshBackStateFooter()
         }
     
     // MARK: - Initializing
@@ -67,7 +67,6 @@ class ViewController: SoapViewController, View {
             .layout { (make) in
                 make.edges.equalToSuperview()
             }
-//        tableView.refreshControl = refreshControl
         
     }
 
@@ -80,25 +79,25 @@ class ViewController: SoapViewController, View {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
-        self.refreshControl.rx.controlEvent(.valueChanged)
-            .map { Reactor.Action.refresh }
-            .bind(to: reactor.action)
-            .disposed(by: disposeBag)
-        
         self.tableView.mj_header.rx.event
             .map { _ in Reactor.Action.refresh }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
+        self.tableView.mj_footer.rx.event
+            .map { _ in Reactor.Action.loadMore }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
         // State
-//        reactor.state.map { $0.isRefreshing }
-//            .distinctUntilChanged()
-//            .bind(to: refreshControl.rx.isRefreshing)
-//            .disposed(by: disposeBag)
         
         reactor.state.map { $0.isRefreshing }
             .distinctUntilChanged()
-            .bind(to: self.tableView.mj_header.refreshing)
+            .bind(to: self.tableView.mj_header.endRefresh)
+            .disposed(by: disposeBag)
+        
+        reactor.state.map { $0.canLoadMore }
+            .bind(to: self.tableView.mj_footer.loadMoreStatus)
             .disposed(by: disposeBag)
         
         reactor.state.map{ $0.sections }

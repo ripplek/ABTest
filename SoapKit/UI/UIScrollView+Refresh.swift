@@ -12,6 +12,12 @@ import RxSwift
 import RxCocoa
 import MJRefresh
 
+enum LoadingStatus {
+    case endRefresh
+    case noMoreData
+    case dataReset
+}
+
 class RxTarget: NSObject, Disposable {  // RxTarget 是 Rxswift 源码
     private var retainSelf: RxTarget?
     override init() {
@@ -65,11 +71,29 @@ extension Reactive where Base: MJRefreshComponent {
     }
 }
 
-extension MJRefreshComponent {
-    var refreshing: Binder<Bool> {
+extension MJRefreshHeader {
+    var endRefresh: Binder<Bool> {
         return Binder.init(self, binding: { (refresher, isRefreshing) in
             if !isRefreshing {
                 refresher.endRefreshing()
+            }
+        })
+    }
+}
+
+extension MJRefreshFooter {
+    var loadMoreStatus: Binder<LoadingStatus> {
+        return Binder.init(self, binding: { (refresher, status) in
+            log.info(status)
+            switch status {
+            case .dataReset:
+                refresher.resetNoMoreData()
+                
+            case .endRefresh:
+                refresher.endRefreshing()
+                
+            case .noMoreData:
+                refresher.endRefreshingWithNoMoreData()
             }
         })
     }

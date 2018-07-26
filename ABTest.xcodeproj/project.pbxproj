@@ -31,14 +31,17 @@
 		0419D22E21009817006EF177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419D22A21009817006EF177 /* AppDelegate.swift */; };
 		0419D22F21009817006EF177 /* MainTabBarViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419D22B21009817006EF177 /* MainTabBarViewReactor.swift */; };
 		0419D2322100A512006EF177 /* ViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419D2312100A512006EF177 /* ViewReactor.swift */; };
-		04D262342101B638006A90CD /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D262312101B638006A90CD /* Client.swift */; };
-		04D262352101B638006A90CD /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D262322101B638006A90CD /* Usage.swift */; };
-		04D262362101B638006A90CD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D262332101B638006A90CD /* Endpoint.swift */; };
 		04D262382101C432006A90CD /* ViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D262372101C432006A90CD /* ViewSection.swift */; };
 		04D2623A2101C647006A90CD /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D262392101C647006A90CD /* Cell.swift */; };
 		04D2623C2101C653006A90CD /* CellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2623B2101C653006A90CD /* CellReactor.swift */; };
 		04E1A1532105DCA8000402AB /* UIScrollView+Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1A1522105DCA8000402AB /* UIScrollView+Refresh.swift */; };
 		04E1A15521071BAA000402AB /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1A15421071BAA000402AB /* UserDefaultsExtensions.swift */; };
+		04E1A1572108762B000402AB /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1A1562108762B000402AB /* Networking.swift */; };
+		04E1A15921087C4E000402AB /* ABTestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1A15821087C4E000402AB /* ABTestAPI.swift */; };
+		04E1A15B210881CF000402AB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1A15A210881CF000402AB /* Service.swift */; };
+		04E1A15D2108848A000402AB /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1A15C2108848A000402AB /* AuthPlugin.swift */; };
+		04E1A15F2108851F000402AB /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1A15E2108851F000402AB /* AccessToken.swift */; };
+		04E1A161210889EA000402AB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1A160210889EA000402AB /* Model.swift */; };
 		66F698BC8D9E627B04AF95F7 /* Pods_ABTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5343A6476164EC0FFA876838 /* Pods_ABTest.framework */; };
 		9A924DCC860F2CC3E468CA58 /* Pods_ABTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C7B5892C54DCC656D88C5 /* Pods_ABTestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -82,14 +85,17 @@
 		0419D22A21009817006EF177 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0419D22B21009817006EF177 /* MainTabBarViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewReactor.swift; sourceTree = "<group>"; };
 		0419D2312100A512006EF177 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
-		04D262312101B638006A90CD /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		04D262322101B638006A90CD /* Usage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
-		04D262332101B638006A90CD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		04D262372101C432006A90CD /* ViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSection.swift; sourceTree = "<group>"; };
 		04D262392101C647006A90CD /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		04D2623B2101C653006A90CD /* CellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReactor.swift; sourceTree = "<group>"; };
 		04E1A1522105DCA8000402AB /* UIScrollView+Refresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Refresh.swift"; sourceTree = "<group>"; };
 		04E1A15421071BAA000402AB /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		04E1A1562108762B000402AB /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		04E1A15821087C4E000402AB /* ABTestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABTestAPI.swift; sourceTree = "<group>"; };
+		04E1A15A210881CF000402AB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		04E1A15C2108848A000402AB /* AuthPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPlugin.swift; sourceTree = "<group>"; };
+		04E1A15E2108851F000402AB /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		04E1A160210889EA000402AB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		282E976CD486E45461DA589F /* Pods-ABTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABTestUITests/Pods-ABTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4397A414028D75B2D4BF7030 /* Pods-ABTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABTestUITests/Pods-ABTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5343A6476164EC0FFA876838 /* Pods_ABTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,9 +249,12 @@
 		04D262302101B638006A90CD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				04D262312101B638006A90CD /* Client.swift */,
-				04D262322101B638006A90CD /* Usage.swift */,
-				04D262332101B638006A90CD /* Endpoint.swift */,
+				04E1A1562108762B000402AB /* Networking.swift */,
+				04E1A15821087C4E000402AB /* ABTestAPI.swift */,
+				04E1A15A210881CF000402AB /* Service.swift */,
+				04E1A15C2108848A000402AB /* AuthPlugin.swift */,
+				04E1A15E2108851F000402AB /* AccessToken.swift */,
+				04E1A160210889EA000402AB /* Model.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -442,7 +451,9 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ManualLayout/ManualLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/ReusableKit/ReusableKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCodable/RxCodable.framework",
@@ -469,7 +480,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ManualLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReusableKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCodable.framework",
@@ -536,7 +549,6 @@
 				0419D22D21009817006EF177 /* MainTabbarController.swift in Sources */,
 				0419D20F210097E6006EF177 /* UIColor+Soap.swift in Sources */,
 				0419D21E21009801006EF177 /* Then.swift in Sources */,
-				04D262342101B638006A90CD /* Client.swift in Sources */,
 				04D2623A2101C647006A90CD /* Cell.swift in Sources */,
 				0419D20C210097E6006EF177 /* UIViewChain.swift in Sources */,
 				0419D22421009801006EF177 /* SoapTableView.swift in Sources */,
@@ -545,16 +557,20 @@
 				0419D22621009801006EF177 /* SoapTableViewCell.swift in Sources */,
 				0419D22021009801006EF177 /* SoapView.swift in Sources */,
 				04D2623C2101C653006A90CD /* CellReactor.swift in Sources */,
-				04D262362101B638006A90CD /* Endpoint.swift in Sources */,
 				0419D22E21009817006EF177 /* AppDelegate.swift in Sources */,
+				04E1A15F2108851F000402AB /* AccessToken.swift in Sources */,
 				04D262382101C432006A90CD /* ViewSection.swift in Sources */,
 				0419D20E210097E6006EF177 /* Namespace.swift in Sources */,
+				04E1A15D2108848A000402AB /* AuthPlugin.swift in Sources */,
 				0419D1E72100960C006EF177 /* ViewController.swift in Sources */,
-				04D262352101B638006A90CD /* Usage.swift in Sources */,
 				0419D22221009801006EF177 /* SoapViewController.swift in Sources */,
 				0419D21F21009801006EF177 /* Logger.swift in Sources */,
+				04E1A1572108762B000402AB /* Networking.swift in Sources */,
 				0419D20D210097E6006EF177 /* StringExtensions.swift in Sources */,
 				0419D22121009801006EF177 /* SoapCollectionViewCell.swift in Sources */,
+				04E1A161210889EA000402AB /* Model.swift in Sources */,
+				04E1A15921087C4E000402AB /* ABTestAPI.swift in Sources */,
+				04E1A15B210881CF000402AB /* Service.swift in Sources */,
 				0419D22321009801006EF177 /* SoapCollectionView.swift in Sources */,
 				04E1A1532105DCA8000402AB /* UIScrollView+Refresh.swift in Sources */,
 				0419D20B210097E6006EF177 /* SwiftyImage.swift in Sources */,
