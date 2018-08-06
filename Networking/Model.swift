@@ -20,7 +20,11 @@ struct Feeds: Codable {
     var feeds: [Feed]?
 }
 
-struct Feed: Codable {
+struct Feed: ModelType {
+    enum Event {
+        
+    }
+    
     var fid: String
     var author: String
     var title: String

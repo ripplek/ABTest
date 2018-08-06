@@ -31,6 +31,10 @@
 		0419D22E21009817006EF177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419D22A21009817006EF177 /* AppDelegate.swift */; };
 		0419D22F21009817006EF177 /* MainTabBarViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419D22B21009817006EF177 /* MainTabBarViewReactor.swift */; };
 		0419D2322100A512006EF177 /* ViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419D2312100A512006EF177 /* ViewReactor.swift */; };
+		04B6E80F2111D0550004A6C2 /* WebLinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6E80E2111D0550004A6C2 /* WebLinking.swift */; };
+		04B6E8122112B60B0004A6C2 /* Moya+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6E8112112B60B0004A6C2 /* Moya+Rx.swift */; };
+		04B6E8142112B6BD0004A6C2 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6E8132112B6BD0004A6C2 /* ModelType.swift */; };
+		04B6E8162112B6F40004A6C2 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6E8152112B6F40004A6C2 /* List.swift */; };
 		04D262382101C432006A90CD /* ViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D262372101C432006A90CD /* ViewSection.swift */; };
 		04D2623A2101C647006A90CD /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D262392101C647006A90CD /* Cell.swift */; };
 		04D2623C2101C653006A90CD /* CellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2623B2101C653006A90CD /* CellReactor.swift */; };
@@ -85,6 +89,10 @@
 		0419D22A21009817006EF177 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0419D22B21009817006EF177 /* MainTabBarViewReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewReactor.swift; sourceTree = "<group>"; };
 		0419D2312100A512006EF177 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
+		04B6E80E2111D0550004A6C2 /* WebLinking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLinking.swift; sourceTree = "<group>"; };
+		04B6E8112112B60B0004A6C2 /* Moya+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Rx.swift"; sourceTree = "<group>"; };
+		04B6E8132112B6BD0004A6C2 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		04B6E8152112B6F40004A6C2 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		04D262372101C432006A90CD /* ViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSection.swift; sourceTree = "<group>"; };
 		04D262392101C647006A90CD /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		04D2623B2101C653006A90CD /* CellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReactor.swift; sourceTree = "<group>"; };
@@ -187,6 +195,7 @@
 		0419D21121009801006EF177 /* SoapKit */ = {
 			isa = PBXGroup;
 			children = (
+				04B6E8102112B5F70004A6C2 /* Rx */,
 				0419D21221009801006EF177 /* Then */,
 				0419D21421009801006EF177 /* Logging */,
 				0419D21621009801006EF177 /* Base */,
@@ -221,6 +230,8 @@
 				0419D21B21009801006EF177 /* SoapTableView.swift */,
 				0419D21C21009801006EF177 /* SoapNavigationController.swift */,
 				0419D21D21009801006EF177 /* SoapTableViewCell.swift */,
+				04B6E8132112B6BD0004A6C2 /* ModelType.swift */,
+				04B6E8152112B6F40004A6C2 /* List.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -246,6 +257,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		04B6E8102112B5F70004A6C2 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				04B6E8112112B60B0004A6C2 /* Moya+Rx.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
 		04D262302101B638006A90CD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +274,7 @@
 				04E1A15C2108848A000402AB /* AuthPlugin.swift */,
 				04E1A15E2108851F000402AB /* AccessToken.swift */,
 				04E1A160210889EA000402AB /* Model.swift */,
+				04B6E80E2111D0550004A6C2 /* WebLinking.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -556,10 +576,13 @@
 				04E1A15521071BAA000402AB /* UserDefaultsExtensions.swift in Sources */,
 				0419D22621009801006EF177 /* SoapTableViewCell.swift in Sources */,
 				0419D22021009801006EF177 /* SoapView.swift in Sources */,
+				04B6E8142112B6BD0004A6C2 /* ModelType.swift in Sources */,
+				04B6E80F2111D0550004A6C2 /* WebLinking.swift in Sources */,
 				04D2623C2101C653006A90CD /* CellReactor.swift in Sources */,
 				0419D22E21009817006EF177 /* AppDelegate.swift in Sources */,
 				04E1A15F2108851F000402AB /* AccessToken.swift in Sources */,
 				04D262382101C432006A90CD /* ViewSection.swift in Sources */,
+				04B6E8162112B6F40004A6C2 /* List.swift in Sources */,
 				0419D20E210097E6006EF177 /* Namespace.swift in Sources */,
 				04E1A15D2108848A000402AB /* AuthPlugin.swift in Sources */,
 				0419D1E72100960C006EF177 /* ViewController.swift in Sources */,
@@ -573,6 +596,7 @@
 				04E1A15B210881CF000402AB /* Service.swift in Sources */,
 				0419D22321009801006EF177 /* SoapCollectionView.swift in Sources */,
 				04E1A1532105DCA8000402AB /* UIScrollView+Refresh.swift in Sources */,
+				04B6E8122112B60B0004A6C2 /* Moya+Rx.swift in Sources */,
 				0419D20B210097E6006EF177 /* SwiftyImage.swift in Sources */,
 				0419D22C21009817006EF177 /* CompositionRoot.swift in Sources */,
 				0419D2322100A512006EF177 /* ViewReactor.swift in Sources */,

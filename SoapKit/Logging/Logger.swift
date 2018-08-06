@@ -9,6 +9,23 @@
 //import CocoaLumberjackSwift
 import CocoaLumberjack
 
+extension NSObject {
+    func propertiesListDesc() {
+        var count: UInt32 = 0
+        let ivars = class_copyIvarList(self.classForCoder, &count)
+        print(self.classForCoder, "count:", count)
+        var arr: [Any] = []
+        for i in 0..<count {
+            let ivar = ivars![Int(i)]
+            let name = ivar_getName(ivar)
+            if let name = String(utf8String: name!) {
+                arr.append(name)
+            }
+        }
+        dump(arr)
+    }
+}
+
 extension DDLogFlag {
     public var level: String {
         switch self {

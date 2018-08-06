@@ -68,6 +68,21 @@ class ViewController: SoapViewController, View {
                 make.edges.equalToSuperview()
             }
         
+        tableView.rx.itemSelected.subscribe(onNext: { (index) in
+            let alert = UIAlertController(title: "标题", message: "ahdkashdkasjhdaskdhashsadkdjh", preferredStyle: .alert)
+            let action = UIAlertAction(title: "a", style: UIAlertActionStyle.default, handler: nil)
+            alert.addAction(action)
+            action.propertiesListDesc()
+            let attr = NSMutableAttributedString(string: "adhkahkadhkaj")
+            attr.addAttribute(NSAttributedStringKey.font, value: UIFont.systemFont(ofSize: 40), range: NSRange(location: 0, length: 1))
+            alert.setValue(attr, forKey: "attributedTitle")
+//            alert.validateValue(&attr, forKey: "attributedTitle")
+            for v in alert.view.subviews {
+                log.info(v.subviews)
+            }
+            
+            self.present(alert, animated: true, completion: nil)
+        }).disposed(by: disposeBag)
     }
 
     // MARK: - Configuring
@@ -103,7 +118,10 @@ class ViewController: SoapViewController, View {
         reactor.state.map{ $0.sections }
             .bind(to: self.tableView.rx.items(dataSource: self.dataSource))
             .disposed(by: disposeBag)
+        
     }
 
 }
+
+
 
