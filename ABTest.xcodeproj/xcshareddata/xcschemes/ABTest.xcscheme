@@ -22,16 +22,16 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2B1C714844EF20E44E3F75088F51BE83"
-               BuildableName = "Pods_ABTest.framework"
-               BlueprintName = "Pods-ABTest"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+               BlueprintIdentifier = "0419D1F42100960E006EF177"
+               BuildableName = "ABTestUITests.xctest"
+               BlueprintName = "ABTestUITests"
+               ReferencedContainer = "container:ABTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
